@@ -11,8 +11,17 @@
                 <script src="https://cdn.tailwindcss.com"></script>
                 <!-- font awesome CDN -->
                 <script src="https://kit.fontawesome.com/8365d12049.js" crossorigin="anonymous"></script>
+                <!-- google font link -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+                <style>
+                  .font{
+                    font-family: "EB Garamond", serif;
+                  }
+                </style>
 </head>
-<body>
+<body class="font">
             <header class="md:container mx-auto">
                 <!-- navbar section -->
                  <nav>
@@ -65,14 +74,17 @@
                  <div
                  class="hero lg:h-[550px]"
                  style="background-image: url(./images/banner.png);">
-                 <div class="hero-overlay bg-opacity-60"></div>
+                 <div class="hero-overlay"></div>
                  <div class="hero-content text-neutral-content text-center">
-                   <div class="max-w-md">
-                     <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
-                     <p class="mb-5">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                   <div class="lg:w-[692px]">
+                     <h1 class="mb-5 text-5xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+                     <p class="mb-5 font-normal text-xl text-gray-400">
+                                There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.
                      </p>
-                     <button class="btn btn-primary">Search</button>
+                     <div class="flex lg:flex-row flex-col justify-center lg:gap-4">
+                      <input type="text" placeholder="Search Your Services" class="input input-bordered lg:w-full lg:max-w-[500px] lg:h-16 text-black" />
+                      <button class="btn bg-[#B68C5A] text-white lg:h-16 lg:w-36 font-semibold text-xl">Search</button>
+                     </div>
                    </div>
                  </div>
                </div>
